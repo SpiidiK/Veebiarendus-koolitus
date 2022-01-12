@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regamine</title>
+    <link rel="stylesheet" href="regamine.css">
+    <style>
+        body {
+          background-image: url('taust.jpg');
+        }
+        </style>
+</head>
+<body>
+    <div class="konteiner">
+        <h1>
+            registreerimine
+        </h1>
+        <form action="http://localhost/autentimine" method="get">
+            <strong><label for="nimi">Kasutajanimi</label> <br></strong>
+            <input type="text" id="nimi" name="nimi" placeholder="Kasutaja"><br>
+            <strong><label for="nimi">Nimi</label> <br></strong>
+            <input type="text" id="nimi" name="nimi" placeholder="Nimi"><br>
+            <strong><label class="ruum-yleval" for="nimi">Salasõna</label></strong> <br>
+            <input type="password" id="salas6na" name="salas6na" placeholder="Salasõna"> <br>
+            <input type="password" id="salas6na" name="salas6na" placeholder="Salasõna teist korda"> <br>
+            <strong><label class="ruum-yleval" for="nimi">Sugu</label></strong> <br>
+            
+            <div>
+                <input type="checkbox">
+                <label for="mees">Naine</label>
+                <input type="checkbox">
+                <label for="mees">Mees</label>
+            </div>
+
+            <input class="placeholder" type="submit" value="Logi sisse">
+            
+        </form>
+    </div>
+ 
+</body>
+</html>
