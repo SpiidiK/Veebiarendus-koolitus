@@ -74,10 +74,12 @@ body {
     transition: 0.5s;
     outline: none;
     background-color: rgba(38, 38, 39, 0.315);
+    color: white;
    
   }
   .nupp:hover {
     border: 1px solid rgb(21, 75, 110);
+    color: black
  }
  .nupudevahe{
     width: 400px;
