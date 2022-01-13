@@ -1,5 +1,5 @@
 .konteiner{
-    background-color: rgba(38, 38, 39, 0.315);
+    background-color: rgba(133, 133, 165, 0.315);
     width: 400px;
     padding: 15px;
     margin-left: auto;
@@ -9,6 +9,8 @@
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.281);
     font-family: 'Roboto', sans-serif;
     color: white;
+    font-size: 14px;
+    
     
 
 }
@@ -18,12 +20,13 @@
   margin-top: 10px;
  
 }
-/* Textid */
+/* Pealkirjad */
 h2{
     color: white;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-size: 30px;
    
 }
 
