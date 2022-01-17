@@ -23,7 +23,6 @@ html, body{
 
 .blokk{
     width: 250px ;
-    height: 350px;
     background-color: rgba(238, 238, 238, 0.767);
     border-style: solid;
     border-width: 1px;
@@ -31,9 +30,13 @@ html, body{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.281);
     margin: 5px;
     padding: 10px;
-    
-
-}
+    overflow:auto;
+    }
+.uudis-kuupaev{
+        font-style: italic;
+        color: red;
+        font-size: 12px;
+  }
 img { 
     width: auto;
     height: 300px;
@@ -72,9 +75,5 @@ h2{
   }
   
   
-  .uudis-kuupaev{
-    font-style: italic;
-    color: red;
-    font-size: 12px;
-  }
+  
   
