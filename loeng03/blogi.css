@@ -74,6 +74,22 @@ h2{
     color: white;
   }
   
+
+  .pilt {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
   
-  
-  
+@media only screen and (max-width: 576px) {
+    .blokk {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .konteiner{
+      width: 100%;
+  }
+
