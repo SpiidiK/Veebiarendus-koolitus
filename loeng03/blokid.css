@@ -1,0 +1,28 @@
+
+body{
+    display: flex;
+    align-content: center;
+    height:100%;
+    width: 100%;
+
+}
+.konteiner{
+    background-color: rgb(230, 230, 230);
+    width: 80%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blokk{
+    width: 150px;
+    height: 150px;
+    background-color: honeydew;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+
+}

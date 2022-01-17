@@ -1,0 +1,43 @@
+html{
+    font-size: 14px;
+}
+
+div{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(216, 214, 214);
+    font-family: 'Roboto', sans-serif;
+    background-image: url("taust.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1,h2{
+    font-family: 'Karla', sans-serif;
+}
+
+.konteiner{
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.uudis-autor, .uudis-kuupaev{
+    font-size: 0.8rem;
+    color: red;
+    font-weight: bold;
+    display:inline-block;
+    width: 49%;
+}
+.uudis-kuupaev{
+    font-style: italic;
+    text-align: right;
+}
+.uudis-sisu{
+    font-size: 1.2rem;
+}
