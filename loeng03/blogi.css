@@ -36,12 +36,9 @@ html, body{
         font-style: italic;
         color: red;
         font-size: 12px;
+       
   }
-img { 
-    width: auto;
-    height: 300px;
-    
-  }
+
 .center {
     display: block;
     margin-left: auto;
@@ -67,8 +64,7 @@ h2{
     transition-duration: 0.4s;
     
   }
- 
-  
+
   .nupp:hover {
     background-color: rgb(117, 10, 10); /* Green */
     color: white;
@@ -93,3 +89,4 @@ h2{
       width: 100%;
   }
 
+ 
