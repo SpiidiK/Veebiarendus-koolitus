@@ -47,13 +47,13 @@ h1{
 .uudis-kuupaev{
     font-style: italic;
     text-align: right;
-    float: right; width: 39%;
+    
 }
 
 .uudis-autor{
     font-style: italic;
     text-align: left;
-     width: 33.333%;
+    
 }
 .uudis-sisu{
     font-size: 1.2rem;
@@ -64,7 +64,7 @@ h1{
     color: red;
     font-weight: 200;
     display:inline-block;
-    width: 49%;
+    width: 49%;;
 }
 .nupp {
     background-color: red;
@@ -76,7 +76,7 @@ h1{
     display: inline-block;
     font-size: 16px;
     transition-duration: 0.4s;
-    margin-top: 50px;
+    margin-top: 55px;
   }
 
   .nupp:hover  {
@@ -84,14 +84,15 @@ h1{
     color: white;
     
   }
-  .uudis-autor, .uudis-kuupaev{
+  .uudis-autor, .uudis-kuupaev, .uudis-thumb{
     font:  0.9em;
     color: red;
     font-weight: bold;
     display:inline-block;
-    width: 32%;
-
-    
+    width: 46%;
+}
+.uudis-thumb{
+    width:6%;
 }
 .pildiasukoht {
     display: block;
@@ -106,3 +107,4 @@ h1{
     width: 10%;
 
   }
+
