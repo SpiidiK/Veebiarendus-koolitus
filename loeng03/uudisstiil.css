@@ -1,0 +1,108 @@
+html{
+    font-size: 14px;
+}
+
+div{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2{
+    font-family: 'Karla', sans-serif;
+    font-size: 2rem;
+    line-height: 8px;
+
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase
+}
+.konteiner{
+    width: 80%;
+    max-width: 1000px;
+    background-color: rgba(238, 238, 238, 0.767);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.veerg2{
+    display:inline-block;
+    width: 38%;
+}
+.veerg1 {
+    vertical-align: top;
+    width: 60%;
+    display:inline-block;
+}
+    
+.uudis-kuupaev{
+    font-style: italic;
+    text-align: right;
+    float: right; width: 39%;
+}
+
+.uudis-autor{
+    font-style: italic;
+    text-align: left;
+     width: 33.333%;
+}
+.uudis-sisu{
+    font-size: 1.2rem;
+}
+
+.kommentaarid{
+    font:  0.9em;
+    color: red;
+    font-weight: 200;
+    display:inline-block;
+    width: 49%;
+}
+.nupp {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    margin-top: 50px;
+  }
+
+  .nupp:hover  {
+    background-color: rgb(117, 10, 10); 
+    color: white;
+    
+  }
+  .uudis-autor, .uudis-kuupaev{
+    font:  0.9em;
+    color: red;
+    font-weight: bold;
+    display:inline-block;
+    width: 32%;
+
+    
+}
+.pildiasukoht {
+    display: block;
+    margin-left: 20px;
+    margin-right: auto;
+    width: 100%;
+  }
+  .thumb {
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 50px;
+    width: 10%;
+
+  }
