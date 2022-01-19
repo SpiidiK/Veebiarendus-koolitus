@@ -1,9 +1,8 @@
 
 body{
     display: flex;
-    align-content: center;
-    height:100%;
-    width: 100%;
+    align-content: flex-end;
+    height:100vh;
 
 }
 .konteiner{
