@@ -11,6 +11,7 @@ header{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
+
 nav{
     display:flex;
     background-color: brown;
@@ -18,7 +19,7 @@ nav{
     justify-content: center;
 }
 
-nav > ul{
+nav > ul {
     display: flex;
     list-style-type: none;
 
