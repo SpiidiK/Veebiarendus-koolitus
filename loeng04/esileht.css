@@ -7,8 +7,13 @@ body{
     background: #F2F3F5;
 }
 header img{
-    width: 100px;
-    padding:20px;
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    width: 60%;
+    max-width: 150px;
+    min-width: 50px;
+    
 
 }
 
@@ -26,13 +31,13 @@ header{
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     list-style-type: none;
     height: 40px;
-    
+   
 }
 nav{
     display:flex;
     height: 70px;
     padding-top: 20px;
-
+    margin-right:5%;
 }
 nav > ul {
     display: flex;
@@ -120,11 +125,13 @@ footer >div > li > a{
 .footervasak{
     width: 30%;
     height: 150px;
+    margin-left: auto;
 }
 
 .footerparem{
-    width: 40%;
+    width: 30%;
     height: 150px;
+    margin-right: auto;
 }
 
 .footerkeskmine{
@@ -157,6 +164,7 @@ main > aside >h1 {
     padding-bottom: 30px;
     background: white;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    font-size: 14px;
 }
 
 
@@ -194,6 +202,7 @@ input, textarea, label {
     border-top-style: none; 
     border-right-style: none; 
     border-left-style: none;
+    font-size: 16px;
   }
 footer > div> h1{
     padding:1px;
@@ -301,6 +310,7 @@ p{
     padding-top:20px;
     padding-bottom: 30px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    font-size: 14px;
 }
 
 .kontakt{
@@ -321,6 +331,8 @@ p{
     padding-bottom: 30px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     list-style-type: none;
+    font-size: 14px;
+    text-align: center;
 }
 
 .sots{
