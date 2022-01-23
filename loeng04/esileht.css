@@ -171,12 +171,14 @@ main > aside >h1 {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    max-width: 150px
 }
 .aside-vasak img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    max-width: 150px
     
 }
 input, textarea, label {
