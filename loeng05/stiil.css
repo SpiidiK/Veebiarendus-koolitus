@@ -5,6 +5,7 @@
 body{
 background-color: tomato;
 }
+
 h1{
     color: blue;
 }
@@ -12,7 +13,7 @@ h1{
 .tablet, .desktop {
     display: none;
 }
-.blokk{
+.card blokk{
     width: 100%;
 }
 
