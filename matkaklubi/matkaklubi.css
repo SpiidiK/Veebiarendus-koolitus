@@ -24,13 +24,14 @@
 .nav{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 16.67px;
+    font-size: 16px;
     letter-spacing: 2.67px;
     color: #000000;
-    text-align: left;
     text-transform: uppercase;
     justify-content: space-around;
     padding-top: 15px;
+    margin-left: auto; 
+margin-right: 0;
 
 }
 
@@ -40,9 +41,3 @@ ul li {
     margin-right: 20px;
   }
 
-.navbar{
-    padding-left: 609px;
-    width: 609px;
-    height: 20px;
-    vertical-align: middle;
-}
