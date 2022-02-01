@@ -14,7 +14,7 @@
     background-size: cover;
     background-repeat: none;
     width: 100%;
-    height: 980px;
+    height: 778px;
 }
 
 .paisLogo{
@@ -28,22 +28,102 @@
     letter-spacing: 2.67px;
     color: #000000;
     text-transform: uppercase;
-    justify-content: space-around;
     padding-top: 15px;
-    margin-left: auto; 
-margin-right: 0;
-
+    width: 100%;
 }
 
-ul li a{
-    list-style-type: none;
-    margin-left: 20px;
-    margin-right: 20px;
+.nav ul {
     color: #0b0b0b;
     text-decoration: none;
+    list-style-type: none;
+    width: 100%;   
+    ;
   }
 
-  ul li a:hover, ul li a:focus {
-    color: #0b0b0b;
-    
-   }
+  .nav a{
+      color: #0b0b0b;
+      
+  }
+  .nav li{
+      margin-left: 20px;
+  }
+
+  .paisSektsioon-pealkirjad{
+      padding-top: 20px;
+  }
+  .paisSektsioon-pealkirjad h1,
+  .paisSektsioon-pealkirjad h3,
+  .paisSektsioon-pealkirjad h2{
+      font-weight: 800;
+      letter-spacing: 0px;
+      color: #0B0B0B;
+      text-transform: uppercase;
+
+  }
+  .paisSektsioon-pealkirjad h1{
+      font-size: 74.39px;
+      line-height: 91px;
+  }
+  .paisSektsioon-pealkirjad h2{
+      font-size: 39.57px;
+      line-height: 48px;
+  }
+  .paisSektsioon-pealkirjad h3{
+      font-size: 20.83px;
+      line-height: 29.17px;
+  }
+  .nupp{
+    height: 58px;
+    width: 247px;
+    background-color: #0B0B0B;
+    color:white;
+    font-size: 12.5px;
+    font-weight: 800;
+    font-weight: 800;
+    letter-spacing: 2.25px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.nupp:hover{
+    color: #0B0B0B;
+    background-color:rgba(255, 255, 255, 0.301);
+    border-color:#0B0B0B;
+}
+.rida{
+    display: flex;
+    width: 100%;
+}
+.liblikas1{
+    margin-top: -47px;
+    margin-right:60px;
+    width: 75px;
+    height: 66px;
+    margin-left: auto;
+}
+.liblikas2{
+    margin-top: 6px;
+    width: 60px;
+    height: 32px;
+    margin-left: -62px;
+}
+
+  @media screen and (min-width: 992px){
+      .paisSektsioon-pealkirjad{
+          padding-top:231px ;
+      }
+
+  }
+.ymmargunepilt{  
+    width: 913.95px;
+    height: 914.06px;
+    border-radius: 50%;
+    margin-left: 1px;
+    background-image: url('assets/Image.png');
+    background-position: center;
+    border-color: transparent;
+    border-style:solid;
+}
+.vari{
+    margin-top: -50px;
+    margin-left: -55px;
+}
