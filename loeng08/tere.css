@@ -56,3 +56,16 @@ strong{
     font-size: 25px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  padding:10px;
+}
+a:hover {
+  color: rgb(21, 75, 110);
+  border-color: rgb(0, 0, 0);
+}
