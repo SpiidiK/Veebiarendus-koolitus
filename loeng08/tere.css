@@ -1,0 +1,58 @@
+.konteiner{
+    background-color: rgba(133, 133, 165, 0.315);
+    width: 400px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px; 
+    border:1px solid white;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.281);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 14px;
+    
+    
+
+}
+
+.ruum-yleval{
+  display: inline-block;
+  margin-top: 10px;
+ 
+}
+/* Pealkirjad */
+h1{
+    color: #ff0026;
+    font-family: 'Supermercado One', cursive;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px #ffffff;
+   
+}
+
+
+/* Taust  */
+body {
+    background-image: url('2150.jpg ');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    
+  }
+
+  
+  .tekst{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+  }
+
+strong{
+  
+  color: #06046e;
+    font-family: 'Supermercado One', cursive;
+    text-shadow: 2px 2px #ffffff;
+    font-size: 25px;
+}
+
