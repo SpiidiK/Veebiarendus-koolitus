@@ -1,0 +1,6 @@
+.rida{
+    display: flex;
+}
+.rida div{
+    margin-right: 1rem;
+}
