@@ -12,3 +12,4 @@ function lisa() {
     valjastaTekst( sisendid.length + ' ' + sisendTekst ) 
     document.getElementById("sisend").value = ""
 }
+
