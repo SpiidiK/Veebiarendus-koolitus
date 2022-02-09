@@ -1,4 +1,4 @@
-let sisendid = []; //selle muutsin
+let sisendid = []; 
 
 function valjastaTekst(sisendTekst) {
     let valjundElement = document.getElementById("valjund")
@@ -8,7 +8,7 @@ function valjastaTekst(sisendTekst) {
 
 function lisa() {
     let sisendTekst = document.getElementById("sisend").value
-    sisendid.push(sisendTekst);  // selle lisasin
-    valjastaTekst( sisendid.length + ' ' + sisendTekst ) // seda muutsin
+    sisendid.push(sisendTekst);  
+    valjastaTekst( sisendid.length + ' ' + sisendTekst ) 
     document.getElementById("sisend").value = ""
 }
