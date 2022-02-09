@@ -16,10 +16,9 @@ let banaan = {
     varv: "yellow"
 }
 
-let saadused = [apelsin, banaan, porgand ]
+let saadused = [ apelsin, porgand, banaan ]
 
 let valjundElement = document.getElementById("valjund")
-for (let i = 0; i < saadused.length; i++){
+for (let i = 0; i < saadused.length; i++) {
     valjundElement.innerHTML += "<div>" + saadused[i].nimi + "</div>"
-
 }
