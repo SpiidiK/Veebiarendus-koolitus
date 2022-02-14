@@ -1,0 +1,10 @@
+ .col-12{
+  margin-top:30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ #text{
+     color:rgb(50, 196, 36);
+ }
