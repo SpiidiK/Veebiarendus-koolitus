@@ -1,96 +1,123 @@
-let ylesanded = []
+const sisuElement = document.getElementById("sisu")
 
-function looYlesanneHTML(ylesanne) {
-    return `
-    <div class="col-12 card">
-        <img class="card-img-top" src=""
-        <div class="card-body">
-        <div class="card-title"> <strong> Ülesanne:</strong>   ${ylesanne.nimi} </div>
-        <div class="card-text"> 
-        <p>
-        <strong> Tähtsus(1 -10):</strong>  ${ylesanne.tahtsus}
-    
-        </p>
-        
-        <p>
-      
-        <strong> Tähtaeg:</strong> ${ylesanne.tahtaeg}
-        </p>
-        <p>
-        <strong> Järgijäänud päevi:</strong> ${ylesanne.paevijaanud}
-    </p>
-    <p>
-    <strong> Seis: <p id="text" style="display:none">Ülesanne on valmis</p></strong>
-    <label for="valmis"></label> 
-    <input type="checkbox" id="valmis" onclick="tseki()">
+function vahetaTehtudMaarang(ylesandeIndeks) {
+    console.log("Valiti ülesanne: " + ylesandeIndeks)
+    let ylesanne = ylesanded[ylesandeIndeks]
+    console.log(ylesanne)
+    ylesanne.kasTehtud = !ylesanne.kasTehtud
+
+    valjastaKoikYlesanded()
+}
+
+
+
+function valjastaYlesanne(ylesanne, ylesandeIndeks) {
+    let kasTehtud = ""
+    let valitud = ""
+    if (ylesanne.kasTehtud) {
+        kasTehtud = 'valmis!'
+        valitud = "checked"
+    }
+
+    sisuElement.innerHTML += `
+
+    <div class="col-12   card">
+    <img class="card-img-top" src=""
+    <div >
+
+    <div class="row">
+
+         <div class="col-11">
+             <h5>Ülessanne ${kasTehtud}</h5>
+        </div>
  
+         <div class="col-1">
+             <label class="switch">
+                <input type="checkbox" onchange="console.log(this.value);" ${valitud} onclick="vahetaTehtudMaarang(${ylesandeIndeks})"> 
+                <span class="slider round"></span>
+             </label>
+         </div>
 
+
+         </div>
+              <div class="card-text">
+            <p class="tekstikujundus"> ${ylesanne.kirjeldus}</p>
+            <h6>Olulisus</h6> <p class="tekstikujundus">${ylesanne.olulisus}</p>
+            <h6> Tähtaeg</h6> <p class="tekstikujundus">${ylesanne.tahtaeg}</p>
+            <h6> Järgijäänud päevi</h6> <p class="tekstikujundusj" style="background-color: ${ylesanne.staatusVarv}">${ylesanne.paevijaanud}</p>
+         
+
+   </div>
+        </div>
+    </div>
     
-
-    </p>
-        
-    </div>
-    </div>
+    
     `
 }
 
+const ylesanded = []
 
-function tseki() {
-    var checkBox = document.getElementById("valmis");
-    var text = document.getElementById("text");
-    if (checkBox.checked == true) {
-        text.style.display = "block";
-    } else {
-        text.style.display = "none";
-    }
-}
+
 
 function lisaYlesanne() {
-    let nimetusTekst = document.getElementById("nimetus").value
-    let tahtsusNumber = document.getElementById("tahtsus").value
-    let seis = document.getElementById("seis").value 
-    let tahtaeg = document.getElementById("tahtaeg").value 
+    let kirjeldus = document.getElementById("kirjeldus").value
+    let tahtaeg = document.getElementById("tahtaeg").value
+    let olulisus = document.getElementById("olulisus").value
 
     let tana = new Date();
     let deadline = new Date(tahtaeg);
     let kuupaevadevaheajas = deadline.getTime() - tana.getTime();
-    let kuupaevadevahepaevades = Math.ceil(kuupaevadevaheajas / (1000 * 3600 * 24)); 
-    if (kuupaevadevahepaevades <5) {
-    document.getElementById('tahtaeg').style.backgroundColor = "red";
-} else if (kuupaevadevahepaevades <10) {
-    document.getElementById('tahtaeg').style.backgroundColor = "orange";
-} else {
-    document.getElementById('tahtaeg').style.backgroundColor = "green";
+    let kuupaevadevahepaevades = Math.ceil(kuupaevadevaheajas / (1000 * 3600 * 24));
+    
+    let staatusVarv = ''
 
-}
-    let ylesanne = {
-        tahtsus: tahtsusNumber,
-        nimi: nimetusTekst,
-        tahtaeg: tahtaeg,
-        seis: seis,
-        paevijaanud: kuupaevadevahepaevades,
-        
+    if(kuupaevadevahepaevades  >10){
+        staatusVarv = '#adf7b6'
+    }else if(kuupaevadevahepaevades > 5 && kuupaevadevahepaevades  < 11){
+        staatusVarv = '#ffee93'
+    }else{
+        staatusVarv = '#ffc09f'
     }
-   
+
+    let ylesanne = {
+        kirjeldus: kirjeldus,
+        tahtaeg: tahtaeg,
+        olulisus: olulisus,
+        paevijaanud: kuupaevadevahepaevades,
+        staatusVarv: staatusVarv,
+       
+    }
+
+    if(document.getElementById("kirjeldus").value.length == 0)
+    {
+        alert("Palun sisesta ülesanne");
+        return false; 
+    }
+    if(document.getElementById("tahtaeg").value.length == 0)
+    {
+        alert("Palun vali tähtaeg");
+        return false; 
+    }
+    if(document.getElementById("olulisus").value.length == 0)
+    {
+        alert("Palun sisesta olulisus ");
+        return false; 
+    }
+
     ylesanded.push(ylesanne)
-    .value = ''
-    naitaYlesannet() 
+    valjastaKoikYlesanded()
+}
+
+
+function valjastaKoikYlesanded() {
+    sisuElement.innerHTML = ""
+    for (i = 0; i < ylesanded.length; i++) {
+        const ylesanne = ylesanded[i]
+        valjastaYlesanne(ylesanne, i)
+    }
     
 }
 
-function naitaYlesannet() {
 
-    let valjundElement = document.getElementById("valjund")
-    let valjundHTML = ''
-    valjundHTML += '<div class="row">'
-    for (let i = 0; i < ylesanded.length; i++) {
-        valjundHTML += looYlesanneHTML(ylesanded[i])
-    }
-    valjundHTML += '</div>'
-    valjundElement.innerHTML = valjundHTML
-
- 
-}
-
-naitaYlesannet()
+valjastaKoikYlesanded()
 
