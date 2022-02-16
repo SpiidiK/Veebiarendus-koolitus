@@ -216,8 +216,9 @@ height:85px;
 
   .jumbotron h1{
       line-height: 40px;
-    
-  }
+      width: 100%;
+}
+  
   .jumbotron p {
    margin-bottom: 50px !important;
     text-align: center;
